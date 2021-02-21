@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN BOOSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css"
+        integrity="sha384-8iuq0iaMHpnH2vSyvZMSIqQuUnQA7QM+f6srIdlgBrTSEyd//AWNMyEaSF2yPzNQ" crossorigin="anonymous">
+    <!-- CDN ANIMATE.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FONT AWESOME 6-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>GitHub Client</title>
+</head>
+
+<body>
+    <!-- NAVIGATION-->
+    <nav class="navbar navbar-primary bg-primary">
+        <a href="/" class="navbar-brand">
+            <i class="fab fa-github"></i> GitHub Client</a>
+        <form id="userForm" class="form-inline my-2 my-lg-0">
+            <input id="textSearch" type="search" class="form-control mr-sm-2" autofocus placeholder="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+                Search
+            </button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div id="profile" class="col-md-4"></div>
+            <div class="col-md-8">
+                <div id="repositories"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
